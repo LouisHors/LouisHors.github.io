@@ -22,7 +22,7 @@
 <meta property="og:site_name" content="SquirrelStock">
 <meta property="og:description" content="“GitHubPages 的搭建”">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-30T22:02:35.778Z">
+<meta property="og:updated_time" content="2018-04-30T22:09:18.954Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hello World -- 新博客第一篇">
 <meta name="twitter:description" content="“GitHubPages 的搭建”">
@@ -353,6 +353,7 @@
 <li>给域名增加一条 CNAME 解析或者 A 解析至 reponame.github.io 或者对应的 ip 地址. (ping reponame.github.io 可获得对应的 ip 地址.)</li>
 <li>打开你的 github pages 对应的 repo, 转到 setting, 对应的 GitHub Pages 选项下, custom domain 输入刚刚添加了解析记录的域名. 点击 save, 正常情况下成功会显示: Your site is published at <a href="http://yourdomain.com" target="_blank" rel="noopener">http://yourdomain.com</a>. 如果出错, 请根据对应的提示自行解决, 大部分是 DNS 的问题.</li>
 <li>在 Custom domain 下面有一项 Enforce HTTPS 选项. 开启以后会使得部分主体的部分功能失效.</li>
+<li>另外, 使用 hexo 管理 pages 的时候, 需要在 hexo 所在文件夹下的 source 文件夹下面新建一个名字为: CNAME 的文件, 无后缀. 打开以后将你的域名, 不加 http, 不加 www, 写在第一行. 不然 hexo 的每次 deploy 都会覆盖掉解析. </li>
 </ol>
 </li>
 </ol>
@@ -367,7 +368,7 @@
         <p><span>本文标题:</span><a href="/2018/04/28/hello-world/">Hello World -- 新博客第一篇</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">Hors</a></p>
         <p><span>发布时间:</span>2018-04-28, 11:54:53</p>
-        <p><span>最后更新:</span>2018-05-01, 06:02:35</p>
+        <p><span>最后更新:</span>2018-05-01, 06:09:18</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2018/04/28/hello-world/" title="Hello World -- 新博客第一篇">http://louishors.com/2018/04/28/hello-world/</a>
             <span class="copy-path" data-clipboard-text="原文: http://louishors.com/2018/04/28/hello-world/　　作者: Hors" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
