@@ -15,17 +15,17 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="“this is the first article of my blog”">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hello World">
 <meta property="og:url" content="http://louishors.com/2018/04/28/hello-world/index.html">
 <meta property="og:site_name" content="SquirrelStock">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="“this is the first article of my blog”">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-28T09:23:41.975Z">
+<meta property="og:updated_time" content="2018-04-30T21:28:16.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:description" content="“this is the first article of my blog”">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -300,15 +300,64 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <p>###Hello World</p>
+<blockquote>
+<p>pages 的第一次提交还是去年, 直到今年才开始写…<br>之前用的国外的 vps+WordPress, IP 被封掉了, 希望这次能坚持下来.</p>
+</blockquote>
+<p>####GitHub Pages + Hexo 的博客搭建</p>
+<ol>
+<li>要有 Git, 以及创建一个 github.io 的 repo, 这是前提</li>
+<li>本地安装 hexo 以及配置:<ol>
+<li>本地安装 nodejs, 终端执行<blockquote>
+<p>brew install node     (请先确保已安装 Homebrew)<br>或者去 nodejs 官网下载 pkg 文件安装也行.</p>
+</blockquote>
+</li>
+<li>通过 npm 安装 hexo<blockquote>
+<p>npm install -g hexo  (10.12 以后需要 sudo 权限)</p>
+</blockquote>
+</li>
+<li>建议在第 2 个操作之前, 先创建一个 hexo 的安装目录<blockquote>
+<p>mkdir yourHexoFolderName<br>cd yourHexoFolderName<br> 然后再执行 2.</p>
+</blockquote>
+</li>
+<li>进入你 hexo 所在的文件夹, 执行以下命令初始化<blockquote>
+<p>hexo init </p>
+</blockquote>
+<pre><code>#初始化hexo
+</code></pre><blockquote>
+<p>npm install</p>
+</blockquote>
+<pre><code>#安装必要组件, 同 2, 10.12 以后需要 sudo 权限.
+</code></pre></li>
+</ol>
+</li>
+<li>hexo 简单目录介绍<ol>
+<li>_config.yml, hexo 的主要配置文件, 类比于 App 里面的 preferences. 各类功能都需要编辑这个文件.</li>
+<li>source, 所有 page 和文章都会存在这个文件夹.</li>
+<li>theme, 主题文件夹, 存放主题用.</li>
+</ol>
+</li>
+<li>hexo 四个基本操作<ol>
+<li>hexo s 本地调试, 可以增加 debug 参数</li>
+<li>hexo g/generator, 生成命令, 编辑文档以后需要生成页面.</li>
+<li>hexo c, 清空命令, 清空cache 和 hexo g 生成的一些文件等</li>
+<li>hexo d, 部署命令, 将 hexo 部署到指定目标.</li>
+<li>使用顺序: hexo clean → hexo g -&gt; hexo d 或者 hexo clean -&gt; hexo s -&gt; hexo g -&gt; hexo d</li>
+</ol>
+</li>
+<li>具体使用: <ol>
+<li>配置主目录下的 _config.yml 文件, 修改 deploy 目标地址为 Git.io 的地址. 其他部分可以参考 hexo 官方文档配置.</li>
+<li>修改主题, 默认主题可修改, 常用的有 yelee 等等, 可以自行参考各主题 Git 进行优化. 需要注意的是不要弄混了主题自带的 _config.yml 和 hexo 根目录下面的 _config.yml 文件.</li>
+<li>插件安装, npm install pluginname –save, 常用的有 sitemap, 用于搜索; feed, 用于 RSS 订阅</li>
+</ol>
+</li>
+<li>GitHub Pages 自定义域名.<ol>
+<li>给域名增加一条 CNAME 解析或者 A 解析至 reponame.github.io 或者对应的 ip 地址. (ping reponame.github.io 可获得对应的 ip 地址.)</li>
+<li>打开你的 github pages 对应的 repo, 转到 setting, 对应的 GitHub Pages 选项下, custom domain 输入刚刚添加了解析记录的域名. 点击 save, 正常情况下成功会显示: Your site is published at <a href="http://yourdomain.com" target="_blank" rel="noopener">http://yourdomain.com</a>. 如果出错, 请根据对应的提示自行解决, 大部分是 DNS 的问题.</li>
+<li>在 Custom domain 下面有一项 Enforce HTTPS 选项. 开启以后会使得部分主体的部分功能失效.</li>
+</ol>
+</li>
+</ol>
 
       
     </div>
@@ -320,7 +369,7 @@
         <p><span>本文标题:</span><a href="/2018/04/28/hello-world/">Hello World</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">Hors</a></p>
         <p><span>发布时间:</span>2018-04-28, 11:54:53</p>
-        <p><span>最后更新:</span>2018-04-28, 17:23:41</p>
+        <p><span>最后更新:</span>2018-05-01, 05:28:16</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2018/04/28/hello-world/" title="Hello World">http://louishors.com/2018/04/28/hello-world/</a>
             <span class="copy-path" data-clipboard-text="原文: http://louishors.com/2018/04/28/hello-world/　　作者: Hors" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -339,7 +388,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+            
         
     </div>
     <style>
