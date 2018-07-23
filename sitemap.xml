@@ -3,12 +3,17 @@
 
     <sitemap>
         <loc>http://louishors.com/post-sitemap.xml</loc>
-        <lastmod>2018-07-23T04:31:27.321Z</lastmod>
+        <lastmod>2018-07-23T04:40:26.457Z</lastmod>
     </sitemap>
 
     <sitemap>
         <loc>http://louishors.com/page-sitemap.xml</loc>
         <lastmod>2018-04-28T08:42:25.057Z</lastmod>
+    </sitemap>
+
+    <sitemap>
+        <loc>http://louishors.com/tag-sitemap.xml</loc>
+        <lastmod>2018-07-23T04:40:26.457Z</lastmod>
     </sitemap>
 
 </sitemapindex>
