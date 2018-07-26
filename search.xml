@@ -3,6 +3,21 @@
   
     
     <entry>
+      <title>keyBoardForTextfield</title>
+      <link href="/2018/07/26/keyBoardForTextfield/"/>
+      <url>/2018/07/26/keyBoardForTextfield/</url>
+      <content type="html"><![CDATA[<h2 id="一个小问题"><a href="#一个小问题" class="headerlink" title="一个小问题"></a>一个小问题</h2><p>最近做了一个注册模块, 其中有一个页面需要填写多项信息, 部分是通过键盘输入(A TextField), 部分是通过弹出 pickerView 以后进行选择(B TextField), 由于 UI 设计的问题, 我就偷懒全用了 UITextField, 这时候遇到了一个小问题, 需要弹出 pickerView 的时候, 我不希望弹出键盘, 我自然的用上了 <code>resignFirstResponder()</code> 这个方法. 结果从 B 失去焦点到 A 获取焦点这个过程中, 键盘依然稳稳的留在屏幕底部. 于是我又尝试了</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">UIView().endEditing(force: true)</span><br><span class="line">UIApplication.shared().keyWindow.endEditing(force: true)</span><br></pre></td></tr></table></figure><p>这两个方法试图从全局取消键盘, failed. 键盘依然坚挺.</p><p><strong>原因: 都是动画惹的祸</strong><br>键盘弹出和收起都有一个 0.25s 的系统自带动画, 如果在这个过程中过快的转换 firstResponder, 键盘动画冲突, 导致键盘彻底失去了 responder.</p><p><strong>最直接的解决办法</strong><br>延迟0.25s, 但是这样的话, 达不到需求, 在点击 A 的时候最终的确不会出现键盘, 但是键盘从收起到弹出再收起还是会有一个过程.</p><p><strong>优化</strong><br>一句代码解决:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">textfield.inputView = UIView(frame: CGRect.zero)</span><br></pre></td></tr></table></figure></p><p>凡是不需要弹起键盘的 TextField, 在初始化的时候加上这句代码即可.</p><p><strong>多说一句</strong><br>系统自带的动画很容易引发各种问题, 比如 UIPageViewController 的转场动画就会在滑动过快的时候导致崩溃.</p>]]></content>
+      
+      
+        <tags>
+            
+            <tag> Swift, UITextField </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>Guangzhou</title>
       <link href="/2018/07/23/Guangzhou/"/>
       <url>/2018/07/23/Guangzhou/</url>
