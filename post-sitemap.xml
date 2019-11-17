@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://louishors.com</loc>
+        <loc>http://blog.louishors.com</loc>
         <changefreq>daily</changefreq>
         <priority>1</priority>
     </url>
 
     <url>
-        <loc>http://louishors.com/UITextFieldProblem/keyBoardForTextfield/</loc>
+        <loc>http://blog.louishors.com/UITextFieldProblem/keyBoardForTextfield/</loc>
         <lastmod>2019-11-17T17:14:36.090Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -15,7 +15,7 @@
     </url>
 
     <url>
-        <loc>http://louishors.com/hello-world/hello-world/</loc>
+        <loc>http://blog.louishors.com/hello-world/hello-world/</loc>
         <lastmod>2019-11-17T17:13:55.782Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -23,7 +23,7 @@
     </url>
 
     <url>
-        <loc>http://louishors.com/touristToGuangZhou/Guangzhou/</loc>
+        <loc>http://blog.louishors.com/touristToGuangZhou/Guangzhou/</loc>
         <lastmod>2019-11-17T17:12:44.607Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>

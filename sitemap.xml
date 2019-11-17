@@ -2,17 +2,17 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <sitemap>
-        <loc>http://louishors.com/post-sitemap.xml</loc>
+        <loc>http://blog.louishors.com/post-sitemap.xml</loc>
         <lastmod>2019-11-17T17:14:36.090Z</lastmod>
     </sitemap>
 
     <sitemap>
-        <loc>http://louishors.com/page-sitemap.xml</loc>
+        <loc>http://blog.louishors.com/page-sitemap.xml</loc>
         <lastmod>2019-11-17T17:13:18.398Z</lastmod>
     </sitemap>
 
     <sitemap>
-        <loc>http://louishors.com/tag-sitemap.xml</loc>
+        <loc>http://blog.louishors.com/tag-sitemap.xml</loc>
         <lastmod>2019-11-17T17:12:44.607Z</lastmod>
     </sitemap>
 
