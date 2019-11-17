@@ -3,6 +3,21 @@
   
     
     <entry>
+      <title>Wiki 之我想开了</title>
+      <link href="/WikiFisrt/First/"/>
+      <url>/WikiFisrt/First/</url>
+      <content type="html"><![CDATA[<h1 id="Wiki-之我想开了"><a href="#Wiki-之我想开了" class="headerlink" title="Wiki 之我想开了"></a>Wiki 之我想开了</h1><p>开这么个系列主要是因为我想在自己的业余时间，把自己知道的，掌握到的知识，总结规范一下<br>大概会分这么几个部分</p><ol><li>专业系列，跟我自己工作相关，编程</li><li>电脑硬件，整理电脑各个我了解的硬件知识</li><li>网络百宝箱，涵盖了各个网络上的小知识和小技巧</li><li>生活方面，洗衣做饭卫生打扫等等</li><li>读书分享，显而易见</li><li>影视分享，看过的电影，电视剧，番剧等等</li></ol><p>具体链接会在日后写了以后补上，希望我能够坚持下来</p>]]></content>
+      
+      
+        <tags>
+            
+            <tag> Wiki </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>keyBoardForTextfield</title>
       <link href="/UITextFieldProblem/keyBoardForTextfield/"/>
       <url>/UITextFieldProblem/keyBoardForTextfield/</url>

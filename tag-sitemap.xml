@@ -9,6 +9,13 @@
     </url>
 
     <url>
+        <loc>http://blog.louishors.com/tags/Wiki/</loc>
+        <lastmod>2019-11-17T17:13:18.398Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>http://blog.louishors.com/tags/UITextField/</loc>
         <lastmod>2019-11-17T17:14:36.090Z</lastmod>
         <changefreq>weekly</changefreq>
