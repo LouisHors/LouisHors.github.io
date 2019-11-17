@@ -4,8 +4,8 @@
     
     <entry>
       <title>Wiki之我想开了</title>
-      <link href="/Wiki/Wiki%E4%B9%8B%E6%88%91%E6%83%B3%E5%BC%80%E4%BA%86/"/>
-      <url>/Wiki/Wiki%E4%B9%8B%E6%88%91%E6%83%B3%E5%BC%80%E4%BA%86/</url>
+      <link href="/Wiki/WikiFirst/"/>
+      <url>/Wiki/WikiFirst/</url>
       <content type="html"><![CDATA[<h1 id="Wiki-之我想开了"><a href="#Wiki-之我想开了" class="headerlink" title="Wiki 之我想开了"></a>Wiki 之我想开了</h1><p>开这么个系列主要是因为我想在自己的业余时间，把自己知道的，掌握到的知识，总结规范一下<br>大概会分这么几个部分</p><ol><li>专业系列，跟我自己工作相关，编程</li><li>电脑硬件，整理电脑各个我了解的硬件知识</li><li>网络百宝箱，涵盖了各个网络上的小知识和小技巧</li><li>生活方面，洗衣做饭卫生打扫等等</li><li>读书分享，显而易见</li><li>影视分享，看过的电影，电视剧，番剧等等</li></ol><p>具体链接会在日后写了以后补上，希望我能够坚持下来</p>]]></content>
       
       
@@ -19,8 +19,8 @@
     
     <entry>
       <title>keyBoardForTextfield</title>
-      <link href="/iOS/keyBoardForTextfield/"/>
-      <url>/iOS/keyBoardForTextfield/</url>
+      <link href="/iOS/UITextfieldProblem/"/>
+      <url>/iOS/UITextfieldProblem/</url>
       <content type="html"><![CDATA[<h2 id="一个小问题"><a href="#一个小问题" class="headerlink" title="一个小问题"></a>一个小问题</h2><p>最近做了一个注册模块, 其中有一个页面需要填写多项信息, 部分是通过键盘输入(A TextField), 部分是通过弹出 pickerView 以后进行选择(B TextField), 由于 UI 设计的问题, 我就偷懒全用了 UITextField, 这时候遇到了一个小问题, 需要弹出 pickerView 的时候, 我不希望弹出键盘, 我自然的用上了 <code>resignFirstResponder()</code> 这个方法. 结果从 B 失去焦点到 A 获取焦点这个过程中, 键盘依然稳稳的留在屏幕底部. 于是我又尝试了</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">UIView().endEditing(force: true)</span><br><span class="line">UIApplication.shared().keyWindow.endEditing(force: true)</span><br></pre></td></tr></table></figure><p>这两个方法试图从全局取消键盘, failed. 键盘依然坚挺.</p><p><strong>原因: 都是动画惹的祸</strong><br>键盘弹出和收起都有一个 0.25s 的系统自带动画, 如果在这个过程中过快的转换 firstResponder, 键盘动画冲突, 导致键盘彻底失去了 responder.</p><p><strong>最直接的解决办法</strong><br>延迟0.25s, 但是这样的话, 达不到需求, 在点击 A 的时候最终的确不会出现键盘, 但是键盘从收起到弹出再收起还是会有一个过程.</p><p><strong>优化</strong><br>一句代码解决:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">textfield.inputView = UIView(frame: CGRect.zero)</span><br></pre></td></tr></table></figure></p><p>凡是不需要弹起键盘的 TextField, 在初始化的时候加上这句代码即可.</p><p><strong>多说一句</strong><br>系统自带的动画很容易引发各种问题, 比如 UIPageViewController 的转场动画就会在滑动过快的时候导致崩溃.</p>]]></content>
       
       
@@ -34,8 +34,8 @@
     
     <entry>
       <title>Guangzhou</title>
-      <link href="/Tourist/Guangzhou/"/>
-      <url>/Tourist/Guangzhou/</url>
+      <link href="/Tourist/GuangZhou/"/>
+      <url>/Tourist/GuangZhou/</url>
       <content type="html"><![CDATA[<h1 id="广深两地三天两夜美食团计划书"><a href="#广深两地三天两夜美食团计划书" class="headerlink" title="广深两地三天两夜美食团计划书"></a>广深两地三天两夜美食团计划书</h1><h2 id="本团主题-吃-还是吃-有时间再逛"><a href="#本团主题-吃-还是吃-有时间再逛" class="headerlink" title="本团主题: 吃, 还是吃, 有时间再逛"></a>本团主题: 吃, 还是吃, 有时间再逛</h2><h2 id="计划总览-三天两夜-加夜宵一共11顿-深圳一天-两顿-广州两天两夜-九顿"><a href="#计划总览-三天两夜-加夜宵一共11顿-深圳一天-两顿-广州两天两夜-九顿" class="headerlink" title="计划总览: 三天两夜, 加夜宵一共11顿. 深圳一天, 两顿, 广州两天两夜, 九顿."></a>计划总览: 三天两夜, 加夜宵一共11顿. 深圳一天, 两顿, 广州两天两夜, 九顿.</h2><h3 id="When-–-什么时候去"><a href="#When-–-什么时候去" class="headerlink" title="When – 什么时候去"></a>When – 什么时候去</h3><p>大约在<del>冬季</del>8月上旬 or 中旬的某个周末+周五1天(此处会在确认每位小伙伴的工期安排以后进行最后修订.)</p><h3 id="Where-–-去哪里"><a href="#Where-–-去哪里" class="headerlink" title="Where – 去哪里"></a>Where – 去哪里</h3><p>深圳, 广州</p><h3 id="Who"><a href="#Who" class="headerlink" title="Who"></a>Who</h3><p>陈剑, 陈剑基友, 刘豪, 刘琴, 马睿, 潘潇, 温少燕, 曾江彬;<br>四男四女, 一共八人.</p><h3 id="What-–-做些什么-要准备些什么"><a href="#What-–-做些什么-要准备些什么" class="headerlink" title="What – 做些什么, 要准备些什么"></a>What – 做些什么, 要准备些什么</h3><ul><li>to do <ol><li>吃早茶</li><li>吃大餐</li><li>吃夜宵</li><li>喝糖水</li><li>顺便逛一逛广州</li></ol></li><li>need to<ol><li>2-3天的换洗衣物, 若干</li><li>信用卡 × 1张(如果是住酒店, 方便交押金)</li><li>身(份证, 手(机, 钥(匙, 钱(现金最好备一点 四要素</li><li>个人药物(如果你需要的话)</li><li>防晒(虽然我们在外面闲逛的时间并不会太多</li></ol></li></ul><h2 id="计划详细内容"><a href="#计划详细内容" class="headerlink" title="计划详细内容"></a>计划详细内容</h2><ol><li>3天11顿饭的具体安排<ol><li>第一天, 周五<ul><li>早餐, 自行解决, 允许各位睡个懒觉</li><li>午餐, 大概在 11:30 左右集结, 预计 2:30 吃完, 馔豚, <a href="http://www.dianping.com/shop/90318000" target="_blank" rel="noopener">介绍</a>, 完成 1/11</li><li>晚餐, 5:30 左右集结, 预计 8:00 吃完, 木屋烧烤, <a href="http://www.dianping.com/shop/90318000" target="_blank" rel="noopener">介绍</a>完成 2/11</li><li>夜宵: 根据高铁到达时间, 如果来得及, 住处安排好以后 11:00 左右集结, 1:00 左右吃完, 如果高铁到达太晚, 取消. 完成 3/11</li></ul></li><li>第二天, 周六<ul><li>早餐, 早茶, 7:00 左右开始, 泮溪酒家, <a href="http://www.dianping.com/shop/517014" target="_blank" rel="noopener">介绍</a>, 4/11</li><li>午餐, 粤菜, 11:30 左右, 大鸽饭, <a href="http://www.dianping.com/shop/15970357" target="_blank" rel="noopener">介绍</a>, 5/11</li><li>下午茶, 糖水, 3:30 - 4:30, 芬芳甜品, <a href="http://www.dianping.com/shop/520356" target="_blank" rel="noopener">介绍</a>, 6/11</li><li>晚餐, 6:30 左右, 7/11</li><li>夜宵, 11:00 左右, 8/11</li></ul></li><li>第三天, 周日 <ul><li>早餐, 视各位起床时间再定, 苏记小食, <a href="http://www.dianping.com/shop/41329351" target="_blank" rel="noopener">介绍</a>, <a href="http://www.acfun.cn/v/ac4462534" target="_blank" rel="noopener">视频</a></li><li>午餐, 待定, 11:30左右, 9/11</li><li>下午茶, 奶茶, 3:30 - 4:30, 10/11</li><li>晚餐, 6:00 - 8:00, 11/11</li><li>返程, 各回各家</li></ul></li></ol></li></ol>]]></content>
       
       
@@ -49,8 +49,8 @@
     
     <entry>
       <title>Hello World -- 新博客第一篇</title>
-      <link href="/hello-world/hello-world/"/>
-      <url>/hello-world/hello-world/</url>
+      <link href="/hello-world/1/"/>
+      <url>/hello-world/1/</url>
       <content type="html"><![CDATA[<h1 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h1><blockquote><p>pages 的第一次提交还是去年, 直到今年才开始写…<br>之前用的国外的 vps+WordPress, IP 被封掉了, 希望这次能坚持下来.</p></blockquote><h2 id="GitHub-Pages-Hexo-的博客搭建"><a href="#GitHub-Pages-Hexo-的博客搭建" class="headerlink" title="GitHub Pages + Hexo 的博客搭建"></a>GitHub Pages + Hexo 的博客搭建</h2><ol><li>要有 Git, 以及创建一个 github.io 的 repo, 这是前提</li><li>本地安装 hexo 以及配置:<ol><li>本地安装 nodejs, 终端执行<blockquote><p>brew install node     (请先确保已安装 Homebrew)<br>或者去 nodejs 官网下载 pkg 文件安装也行.</p></blockquote></li><li>通过 npm 安装 hexo<blockquote><p>npm install -g hexo  (10.12 以后需要 sudo 权限)</p></blockquote></li><li>建议在第 2 个操作之前, 先创建一个 hexo 的安装目录<blockquote><p>mkdir yourHexoFolderName<br>cd yourHexoFolderName<br> 然后再执行 2.</p></blockquote></li><li>进入你 hexo 所在的文件夹, 执行以下命令初始化<blockquote><p>hexo init </p></blockquote><pre><code>#初始化hexo</code></pre><blockquote><p>npm install</p></blockquote><pre><code>#安装必要组件, 同 2, 10.12 以后需要 sudo 权限.</code></pre></li></ol></li><li>hexo 简单目录介绍<ol><li>_config.yml, hexo 的主要配置文件, 类比于 App 里面的 preferences. 各类功能都需要编辑这个文件.</li><li>source, 所有 page 和文章都会存在这个文件夹.</li><li>theme, 主题文件夹, 存放主题用.</li></ol></li><li>hexo 四个基本操作<ol><li>hexo s 本地调试, 可以增加 debug 参数</li><li>hexo g/generator, 生成命令, 编辑文档以后需要生成页面.</li><li>hexo c, 清空命令, 清空cache 和 hexo g 生成的一些文件等</li><li>hexo d, 部署命令, 将 hexo 部署到指定目标.</li><li>使用顺序: hexo clean → hexo g -&gt; hexo d 或者 hexo clean -&gt; hexo s -&gt; hexo g -&gt; hexo d</li></ol></li><li>具体使用: <ol><li>配置主目录下的 _config.yml 文件, 修改 deploy 目标地址为 Git.io 的地址. 其他部分可以参考 hexo 官方文档配置.</li><li>修改主题, 默认主题可修改, 常用的有 yelee 等等, 可以自行参考各主题 Git 进行优化. 需要注意的是不要弄混了主题自带的 _config.yml 和 hexo 根目录下面的 _config.yml 文件.</li><li>插件安装, npm install pluginname –save, 常用的有 sitemap, 用于搜索; feed, 用于 RSS 订阅</li></ol></li><li>GitHub Pages 自定义域名.<ol><li>给域名增加一条 CNAME 解析或者 A 解析至 reponame.github.io 或者对应的 ip 地址. (ping reponame.github.io 可获得对应的 ip 地址.)</li><li>打开你的 github pages 对应的 repo, 转到 setting, 对应的 GitHub Pages 选项下, custom domain 输入刚刚添加了解析记录的域名. 点击 save, 正常情况下成功会显示: Your site is published at <a href="http://yourdomain.com" target="_blank" rel="noopener">http://yourdomain.com</a>. 如果出错, 请根据对应的提示自行解决, 大部分是 DNS 的问题.</li><li>在 Custom domain 下面有一项 Enforce HTTPS 选项. 开启以后会使得部分主体的部分功能失效.</li><li>另外, 使用 hexo 管理 pages 的时候, 需要在 hexo 所在文件夹下的 source 文件夹下面新建一个名字为: CNAME 的文件, 无后缀. 打开以后将你的域名, 不加 http, 不加 www, 写在第一行. 不然 hexo 的每次 deploy 都会覆盖掉解析. </li></ol></li></ol>]]></content>
       
       

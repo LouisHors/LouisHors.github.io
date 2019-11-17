@@ -2,22 +2,22 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
+        <loc>http://blog.louishors.com/tags/Wiki/</loc>
+        <lastmod>2019-11-17T18:01:09.327Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>http://blog.louishors.com/tags/%E9%9A%8F%E7%AC%94/</loc>
-        <lastmod>2019-11-17T17:34:41.851Z</lastmod>
+        <lastmod>2019-11-17T18:01:31.807Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://blog.louishors.com/tags/UITextField/</loc>
-        <lastmod>2019-11-17T17:35:00.015Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://blog.louishors.com/tags/Wiki/</loc>
-        <lastmod>2019-11-17T17:58:43.406Z</lastmod>
+        <lastmod>2019-11-17T18:01:58.789Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
