@@ -7,16 +7,24 @@
     </url>
 
     <url>
-        <loc>http://blog.louishors.com/WikiFisrt/First/</loc>
-        <lastmod>2019-11-17T17:27:56.090Z</lastmod>
+        <loc>http://blog.louishors.com/iOS/keyBoardForTextfield/</loc>
+        <lastmod>2019-11-17T17:35:00.015Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>http://blog.louishors.com/UITextFieldProblem/keyBoardForTextfield/</loc>
-        <lastmod>2019-11-17T17:14:36.090Z</lastmod>
+        <loc>http://blog.louishors.com/Tourist/Guangzhou/</loc>
+        <lastmod>2019-11-17T17:34:41.851Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://blog.louishors.com/Wiki/First/</loc>
+        <lastmod>2019-11-17T17:34:16.790Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -25,14 +33,6 @@
     <url>
         <loc>http://blog.louishors.com/hello-world/hello-world/</loc>
         <lastmod>2019-11-17T17:13:55.782Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://blog.louishors.com/touristToGuangZhou/Guangzhou/</loc>
-        <lastmod>2019-11-17T17:12:44.607Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
